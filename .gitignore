@@ -1,0 +1,24 @@
+# Virtual environments -- never commit these, they're what make
+# the folder gigabytes in size. Everyone recreates their own from
+# requirements.txt.
+venv/
+.venv/
+env/
+prototype/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime-generated data -- recreated automatically when you run the app
+logs/
+recordings/
+recognition/training_data/*.csv
+recognition/activity_model.pkl
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
