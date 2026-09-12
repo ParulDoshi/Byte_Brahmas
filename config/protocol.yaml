@@ -1,0 +1,20 @@
+# Defines the sequence of "steps" the experiment expects, in order.
+# Swap these labels for your real experiment steps once you have a
+# trained model that can recognize them (see recognition/model.py).
+#
+# For the demo, these map to simple body poses so you can test the
+# whole pipeline live with just a webcam:
+#   raise_hand      -> right hand raised above shoulder height
+#   hands_together  -> both wrists brought close together
+#   reach_down      -> right hand reaching below hip height
+
+experiment_name: "Demo Experiment Protocol"
+
+steps:
+  - "raise_hand"
+  - "hands_together"
+  - "reach_down"
+
+# How many consecutive frames the same activity must be detected for
+# before it counts as "confirmed" — filters out flicker/noise.
+debounce_frames: 8

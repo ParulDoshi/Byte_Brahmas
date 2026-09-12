@@ -1,0 +1,11 @@
+# Networking / recording settings for the video streaming feature.
+#
+# stream_ip / stream_port: where the live annotated feed gets pushed.
+# Point stream_ip at the "mission control" machine's IP address, and
+# run `python streaming/receiver_demo.py --port <stream_port>` there
+# to view it. Use 127.0.0.1 to demo both sides on one laptop.
+stream_ip: "127.0.0.1"
+stream_port: 9000
+
+enable_streaming: true
+enable_recording: true
